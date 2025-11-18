@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aqua Vend Kenya | Smart Water Vending Machines</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f8fb;
+      color: #222;
+      line-height: 1.6;
+      transition: 0.3s ease;
+    }
+
+    /* DARK MODE */
+    body.dark {
+      background-color: #121212;
+      color: #e5e5e5;
+    }
+
+    /* Toggle Button */
+    .toggle-btn {
+      position: fixed;
+      top: 15px;
+      right: 15px;
+      background: #0077b6;
+      color: white;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      z-index: 1000;
+      transition: background 0.3s;
+    }
+
+    .toggle-btn:hover {
+      background: #0096c7;
+    }
+
+    header {
+      background: #0077b6;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      transition: 0.3s ease;
+    }
+
+    body.dark header {
+      background: #003f63;
+    }
+
+    section {
+      padding: 2rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
+      background: white;
+      margin-bottom: 1rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: 0.3s;
+    }
+
+    body.dark section {
+      background: #1e1e1e;
+      box-shadow: 0 4px 10px rgba(255,255,255,0.05);
+    }
+
+    h2 {
+      color: #0077b6;
+      margin-bottom: 0.5rem;
+      transition: 0.3s;
+    }
+
+    body.dark h2 {
+      color: #00b4d8;
+    }
+
+    ul {
+      list-style-type: "💧 ";
+      padding-left: 1.2rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 1rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    /* Slight dim in dark mode */
+    body.dark .gallery img {
+      filter: brightness(0.8);
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+    }
+
+    .contact {
+      text-align: center;
+      background: #0077b6;
+      color: white;
+      padding: 2rem 1rem;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+
+    body.dark .contact {
+      background: #003f63;
+    }
+
+    .contact a {
+      color: white;
+      font-weight: bold;
+      text-decoration: none;
+      background: #00b4d8;
+      padding: 10px 20px;
+      border-radius: 8px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #023e8a;
+      color: white;
+      transition: 0.3s;
+    }
+
+    body.dark footer {
+      background: #001f3f;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Dark Mode Toggle Button -->
+  <button class="toggle-btn" onclick="document.body.classList.toggle('dark')">
+    🌙 Dark Mode
+  </button>
+
+  <header>
+    <h1>AquaVend Kenya</h1>
+    <p>Smart, Reliable & Profitable Water Vending Machines</p>
+  </header>
+
+  <section>
+    <h2>About Us</h2>
+    <p>
+      At <strong>AquaVend Kenya</strong>, we design and build automated water vending machines
+      that help you run a clean water business efficiently and profitably.
+      Our systems combine hardware precision with easy operation.
+    </p>
+  </section>
+
+  <section>
+    <h2>Why Choose AquaVend?</h2>
+    <ul>
+      <li>💧 Accurate dispensing — every litre measured precisely.</li>
+      <li>💧 Energy-efficient 12V system.</li>
+      <li>💧 Adjustable flow for water and thicker liquids like cooking oil.</li>
+      <li>💧 Easy setup, ideal for small entrepreneurs and community kiosks.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>How It Works</h2>
+    <ol>
+      <li>Customer selects amount or presses the # button for 1 litre (Ksh 75).</li>
+      <li>The machine dispenses automatically and switches off when done.</li>
+      <li>Simple to refill and maintain — no complex setup required.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2>Our Machines</h2>
+    <p>Here are some of our vending machines in action:</p>
+
+    <div class="gallery">
+      <img src="machine1.jpg" alt="Water vending machine 1">
+      <img src="machine2.jpg" alt="Water vending machine 2">
+      <img src="machine3.jpg" alt="Water vending machine 3">
+    </div>
+
+    <p style="margin-top:1rem; font-size: 0.9rem;">
+      <!-- Comment removed from visible display -->
+    </p>
+  </section>
+
+  <section>
+    <h2>Customer Feedback</h2>
+    <blockquote>
+      “The vending machine from AquaVend works perfectly! Reliable and easy to use.”<br>
+      — <em>Faith M., Kiambu</em>
+    </blockquote>
+    <blockquote>
+      “I started earning profit in my first month. Great support and design.”<br>
+      — <em>Brian N., Nakuru</em>
+    </blockquote>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 <strong>+254 795 805 814</strong></p>
+    <p>📧 kevinatm24@gmail.com</p>
+    <a href="https://wa.me/254795805814?text=Hi%20I%20saw%20your%20water%20vending%20machines" target="_blank">Chat on WhatsApp</a>
+  </section>
+
+  <footer>
+    <p>© 2025 AquaVend Kenya. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
